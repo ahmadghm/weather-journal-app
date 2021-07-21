@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Weather Journal</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <div class="holder headline">
+                Weather Journal App
+                <img src="./images/header.png" alt="header icon" align="right" width="100px" height="100px" />
+            </div>
+            <div class="holder zip">
+                <label for="zip">Enter Zipcode here <a href="http://www.phaster.com/zip_code.html" class="anchore" target="_blank">find your location</a></label>
+                <input type="text" id="zip" placeholder="enter zip code here like : 10001" />
+            </div>
+            <div class="holder feel">
+                <label for="feelings">How are you feeling today? <img src="images/feelings.png" alt="icon feelings" width="60px" height="60px" /></label>
+                <textarea class="myInput" id="feelings" placeholder="Enter your feelings here like: I'am happy *_*" rows="5" cols="55%"></textarea>
+                <button id="generate" type="submit"><img src="images/settings.png" alt="" />Generate</button>
+            </div>
+            <div class="holder entry">
+                <div class="title">Most Recent Entry</div>
+                <div id="entryHolder">
+                    <div id="cityName"></div>
+                    <div id="date"></div>
+                    <div id="temp"></div>
+                    <div id="content"></div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>
